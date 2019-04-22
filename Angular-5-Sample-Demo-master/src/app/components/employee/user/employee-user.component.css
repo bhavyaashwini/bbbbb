@@ -1,0 +1,51 @@
+
+.margin-right{
+	margin-right: 90px;
+}
+.custom-card{
+	width: 200%;
+	margin:auto;
+}
+span.fa.fa-pencil{
+	color:greenyellow;
+}
+span.glyphicon.glyphicon-remove{
+	color:red;
+}
+.table-bordered>tbody>tr>td
+{
+	border: 2px solid #212529;
+}
+th.text-center {
+	border: 2px solid #212529;
+	font-size:17px;
+}
+td {
+	vertical-align:middle;
+	height:34px;
+	padding:10px;
+	border-bottom:solid 1px gray;
+	font-size: 15px;
+  }
+  .background {
+	font-weight:700;
+	vertical-align:middle;
+	position:relative;
+	color:white;
+  }
+
+  .progress[_ngcontent-c2] {
+	  color: red;
+  }
+  button.btn.btn-info.btn-lg {
+	  font-size: 20px;
+
+  }
+  a.w3-bar-item.w3-button {
+    font-size: 30px;
+	
+    background-color: burlywood;
+	width:200px;
+	float: right;
+}
+

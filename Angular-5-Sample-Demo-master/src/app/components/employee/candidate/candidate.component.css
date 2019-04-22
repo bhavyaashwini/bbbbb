@@ -1,0 +1,62 @@
+h2 {
+    font-size: larger;
+}
+
+th {
+    font-weight: bold;
+    text-align: -internal-center;
+}
+table,th,td {
+    border: 1px solid black;
+}
+table.a1 {
+    border-collapse: collapse;
+    width: 80%;
+    border: 1px solid black;
+    width:100%;
+}
+table.a2 {
+    border-collapse: collapse;
+    width: 80%;
+    border: 1px solid black;
+    width:100%;
+}
+table.a3{
+    border-collapse: collapse;
+    width: 80%;
+    border: 1px solid black;
+    width:100%;
+}
+
+table.a4{
+    border-collapse: collapse;
+    width: 80%;
+    border: 1px solid black;
+    width:100%;
+}
+table.a5{
+    border-collapse: collapse;
+    width: 80%;
+    border: 1px solid black;
+    width:100%;
+}
+
+table.a6{
+    border-collapse: collapse;
+    width: 80%;
+    border: 1px solid black;
+    width:100%;
+  
+}
+button.btn.btn-secondary {
+    background-color: blueviolet;
+ 
+ float:left;
+ width: 100px;
+ height:50px;
+
+}
+html{
+    background-color: antiquewhite;
+}
+

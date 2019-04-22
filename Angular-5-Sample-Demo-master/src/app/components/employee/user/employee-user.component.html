@@ -1,0 +1,78 @@
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+<div class="card">
+	<h3 class="card-header text-center font-weight-bold text-uppercase py-4" [ngStyle]="{'background-color':'pink'}">DASHBOARD
+		USER-ROLE</h3>
+	<div class="card-body">
+		<div id="table" class="employee-user">
+			<button class="btn btn-info btn-lg" (click)="addskill()">
+
+				<span class="glyphicon glyphicon-plus"></span> ADD SKILL
+			</button>
+			<br><br>
+
+
+			<table class="table table-bordered table-responsive-md table-striped text-center">
+				<tr>
+					<th class="text-center" [ngStyle]="{'background-color':'cyan'}">Employeeskill</th>
+					<th class="text-center" [ngStyle]="{'background-color':'cyan'}">progress</th>
+					<th class="text-center" [ngStyle]="{'background-color':'cyan'}">Rating</th>
+					<th _ngcontent-c2="" class="text-center" style="width:150px; height:50px;" [ngStyle]="{'background-color':'cyan'}">Total
+						Experience</th>
+					<th class="text-center" [ngStyle]="{'background-color':'cyan'}">Year</th>
+					<th class="text-center" [ngStyle]="{'background-color':'cyan'}">Action</th>
+
+				</tr>
+				<tr *ngFor="let person of personList; let id = index">
+					<td contentnoneditable="true" (keyup)="changeValue(id, 'employeeskill', $event)" (blur)="updateList(id, 'employeeskill', $event)">{{person.employeeskill}}
+					</td>
+					<td class="background background__running">
+						<div class="progress">
+							<div class="progress-bar bg-success" role="progressbar" style="width: 25%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">{{person.progress}}</div>
+						</div>
+					</td>
+					<td> {{person.rating}}</td>
+					<td contentnoneditable="true" (keyup)="changeValue(id, 'totalexperience', $event)" (blur)="updateList(id, 'totalexperience', $event)">{{person.totalexperience}}</td>
+					<td contentnoneditable="true" (keyup)="changeValue(id, 'year', $event)" (blur)="updateList(id, 'year', $event)">{{person.year}}</td>
+					<td>
+						<span class="Action">
+							<span class="fa fa-pencil" style="font-size:24px;" (click)="success(id)" title="Edit"></span>&nbsp;&nbsp;
+							<span class="glyphicon glyphicon-remove" (click)="deleteFieldValue(i)" title="Delete"></span>
+						
+						</span>
+					</td>
+				</tr>
+				<tr *ngIf="addflag">
+						<td contentnoneditable="true" (keyup)="changeValue(id, 'employeeskill', $event)" (blur)="updateList(id, 'employeeskill', $event)">
+							<select class = "form-control" id = "1" required
+									[(ngModel)] = "skill" >
+								<option>nodejs</option>
+								<option>angular</option>
+								<option>html</option>
+								<option>java</option>
+								<option>php</option>
+								<option>mongodb</option>
+							</select>
+						</td>
+						<td class="background background__running">
+								<input type="range" min="1" max="100" value="50" class="slider" id="range" class = "form-control" required
+								[(ngModel)] = "range">
+						</td>
+						<td> 	<input type="text" id="rating" value="" class = "form-control" id = "1" required
+							[(ngModel)] = "rating"></td>
+						<td contentnoneditable="true" (keyup)="changeValue(id, 'totalexperience', $event)" (blur)="updateList(id, 'totalexperience', $event)">
+								<input type="text" id="experience" value="" class = "form-control" id = "1" required
+								[(ngModel)] = "experience"></td>
+						<td contentnoneditable="true" (keyup)="changeValue(id, 'year', $event)" (blur)="updateList(id, 'year', $event)">
+							<input [(ngModel)] = "date"  type="date"/>
+                        </td>
+						<td>
+						<button type="button" class="btn btn-success" (click)="save(id)">Save</button> &nbsp;&nbsp;
+						<button type="button" class="btn btn-success" (click)="cancel(id)">Cancel</button>
+						</td>
+					</tr>
+			</table>
+		</div>
+	</div>
+</div>

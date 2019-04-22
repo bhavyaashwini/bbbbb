@@ -1,0 +1,74 @@
+input[type=text] {
+    width:20%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+    border: 2px solid crimson;
+    border-radius: 4px;
+   } 
+   input#start {
+      height: 40px;
+      width: 250px;
+      border-color: crimson;
+  }
+  input[type="date"] {
+    height: 50px;
+    width: 280px;
+    border-color:crimson;
+}
+  select#dept{
+      height: 50px;
+      width: 280px;
+      border-color:crimson;
+  }
+  select#skill {
+    height: 50px;
+    width: 280px;
+    border-color:crimson;
+}
+select#reason{
+    height: 50px;
+    width: 280px;
+    border-color:crimson;
+}
+select#loans {
+    height: 50px;
+    width: 280px;
+    border-color:crimson;
+}
+select#pre-annul {
+    height: 50px;
+    width: 280px;
+    border-color:crimson;
+}
+select#ins {
+    height: 50px;
+    width: 280px;
+    border-color:crimson;
+}
+  input#end {
+      height: 40px;
+      width: 250px;
+      border-color: crimson;
+  }
+  button.btn.btn-primary {
+      height: 50px;
+      width: 150px;
+      background-color:darkolivegreen;
+      color: white;
+  }
+  form {
+      background-color: cornsilk;
+      
+      text-align: center;
+  }
+  html {
+      background-color: darkgray;
+  }
+  label {
+      font-size: 20px;
+      font-family: times new roman;
+  }
+  h1{
+    text-align: center;
+  }

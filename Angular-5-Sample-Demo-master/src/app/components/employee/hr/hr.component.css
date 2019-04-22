@@ -1,0 +1,12 @@
+h1{
+text-align: center;
+}
+img.logo {
+    width: 700px;
+    height: 390px;
+}
+button.btn.btn-info.btn-lg {
+    background-color: blueviolet;
+    width: 100px;
+    height: 50px;
+}

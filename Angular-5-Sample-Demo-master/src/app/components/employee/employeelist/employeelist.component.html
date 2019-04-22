@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+<head>
+  </head>
+  <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+  <body><br>
+    <button  routerLink="/hrpage"  class="btn btn-info btn-lg" href="">
+			
+   BACK
+</button>
+  <h2><b>EMPLOYEE LIST</b></h2><br><br>
+  
+  <table>
+    <tr>
+      <th>USERID</th>
+      <th>NAME/EMAIL</th>
+      <th>PASSWORD</th>
+    <th>EMP ID</th>
+    <th>PAYROLL</th>
+    <th>LEAVES</th>
+      <th>ENABLE</th>
+      <th>DISABLE</th>
+    <th>PRINT</th>
+      <th>ACTIONS</th>
+    </tr>
+    <tr *ngFor="let d of data" [attr.userid]="d.userid">
+      <td>{{d.userid}}</td>
+      <td>{{d.name}}</td>
+      <td>{{d.password}}</td>
+    <td>{{d.empid}}</td>
+     <td>{{d.manage}}<button  type="button"  routerLink="/manage1" class="btn btn-square btn-primary">Manage</button></td>
+     <td>{{d.leave}}<button  type="button" routerLink="/leave" class="btn btn-primary btn-info">Manage</button></td>
+      <td>{{d.enable}}<button type="button" class="btn btn-square btn-success">Enable</button></td>
+      <td>{{d.disable}}<button type="button" class="btn btn-square btn-warning">Disable</button></td>
+      <td>{{d.salaryslip}}<button type="button"routerLink="/salaryslip" class="btn btn-primary btn-sm">Salary slips</button></td>
+    <td><button type="button"  (click)="deleterow(d)" class="btn btn-danger">Delete</button>&nbsp;&nbsp;&nbsp;
+      <button type="button" routerLink="/employee1" class="btn btn-secondary">View</button>&nbsp;&nbsp;&nbsp;
+    </td>
+    </tr>
+    <tr *ngFor="let d of data1" [attr.userid]="d.userid">
+      <td>{{d.userid}}</td>
+      <td>{{d.name}}</td>
+      <td>{{d.password}}</td>
+    <td>{{d.empid}}</td>
+     <td>{{d.manage}}<button  type="button"  routerLink="/manage2" class="btn btn-square btn-primary">Manage</button></td>
+     <td>{{d.leave}}<button  type="button" routerLink="/leave2" class="btn btn-primary btn-info">Manage</button></td>
+      <td>{{d.enable}}<button type="button" class="btn btn-square btn-success">Enable</button></td>
+      <td>{{d.disable}}<button type="button" class="btn btn-square btn-warning">Disable</button></td>
+      <td>{{d.salaryslip}}<button type="button"routerLink="/salaryslip2" class="btn btn-primary btn-sm">Salary slips</button></td>
+    <td><button type="button"  (click)="delete(d)" class="btn btn-danger">Delete</button>&nbsp;&nbsp;&nbsp;
+      <button type="button" routerLink="/employee2" class="btn btn-secondary">View</button>&nbsp;&nbsp;&nbsp;
+    </td>
+    </tr>
+    <tr *ngFor="let d of data2" [attr.userid]="d.userid">
+      <td>{{d.userid}}</td>
+      <td>{{d.name}}</td>
+      <td>{{d.password}}</td>
+    <td>{{d.empid}}</td>
+     <td>{{d.manage}}<button  type="button"  routerLink="/manage3" class="btn btn-square btn-primary">Manage</button></td>
+     <td>{{d.leave}}<button  type="button" routerLink="/leave3" class="btn btn-primary btn-info">Manage</button></td>
+      <td>{{d.enable}}<button type="button" class="btn btn-square btn-success">Enable</button></td>
+      <td>{{d.disable}}<button type="button" class="btn btn-square btn-warning">Disable</button></td>
+      <td>{{d.salaryslip}}<button type="button"routerLink="/salaryslip3" class="btn btn-primary btn-sm">Salary slips</button></td>
+    <td><button type="button"  (click)="rowdelete(d)" class="btn btn-danger">Delete</button>&nbsp;&nbsp;&nbsp;
+      <button type="button" routerLink="/employee3" class="btn btn-secondary">View</button>&nbsp;&nbsp;&nbsp;
+    </td>
+    </tr>
+    <tr *ngFor="let d of data3" [attr.userid]="d.userid">
+      <td>{{d.userid}}</td>
+      <td>{{d.name}}</td>
+      <td>{{d.password}}</td>
+    <td>{{d.empid}}</td>
+     <td>{{d.manage}}<button  type="button"  routerLink="/manage4" class="btn btn-square btn-primary">Manage</button></td>
+     <td>{{d.leave}}<button  type="button" routerLink="/leave4" class="btn btn-primary btn-info">Manage</button></td>
+      <td>{{d.enable}}<button type="button" class="btn btn-square btn-success">Enable</button></td>
+      <td>{{d.disable}}<button type="button" class="btn btn-square btn-warning">Disable</button></td>
+      <td>{{d.salaryslip}}<button type="button"routerLink="/salaryslip4" class="btn btn-primary btn-sm">Salary slips</button></td>
+    <td><button type="button"  (click)="rawdelete(d)" class="btn btn-danger">Delete</button>&nbsp;&nbsp;&nbsp;
+      <button type="button" routerLink="/employee4" class="btn btn-secondary">View</button>&nbsp;&nbsp;&nbsp;
+    </td>
+    </tr>
+    <tr *ngFor="let d of data4" [attr.userid]="d.userid">
+      <td>{{d.userid}}</td>
+      <td>{{d.name}}</td>
+      <td>{{d.password}}</td>
+    <td>{{d.empid}}</td>
+     <td>{{d.manage}}<button  type="button"  routerLink="/manage5" class="btn btn-square btn-primary">Manage</button></td>
+     <td>{{d.leave}}<button  type="button" routerLink="/leave5" class="btn btn-primary btn-info">Manage</button></td>
+      <td>{{d.enable}}<button type="button" class="btn btn-square btn-success">Enable</button></td>
+      <td>{{d.disable}}<button type="button" class="btn btn-square btn-warning">Disable</button></td>
+      <td>{{d.salaryslip}}<button type="button"routerLink="/salaryslip5" class="btn btn-primary btn-sm">Salary slips</button></td>
+    <td><button type="button"  (click)="del(d)" class="btn btn-danger">Delete</button>&nbsp;&nbsp;&nbsp;
+      <button type="button" routerLink="/employee5" class="btn btn-secondary">View</button>&nbsp;&nbsp;&nbsp;
+    </td>
+    </tr>
+     </table>
+  </body>
+  </html>

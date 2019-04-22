@@ -1,0 +1,59 @@
+table, td, th {  
+    border: 3px solid black;
+    text-align: left;
+  }
+  body {
+    background: lightsalmon;
+  }
+  
+  table {
+    border-collapse: collapse;
+    width: 100%;
+    border:2px;
+  }
+  button.btn.btn-secondary {
+    background-color: blueviolet;
+ size: a5;
+ height: 35px;
+ float:left;
+ width: 100px;
+ height:50px;
+
+}
+  
+  th, td {
+    padding: 15px;
+  }
+  th {
+      color:chocolate;
+      text-align:center;
+  }
+  td{
+  text-align:center;
+  }
+  
+  
+  button.btn.btn-info.btn-lg {
+      
+      background-color:lightseagreen;
+      float: right;
+      height: 50px;
+      width: 150px;
+  }
+  center {
+      font-style: oblique;
+      color: darkslategray;
+  }
+  * {
+    box-sizing: border-box;
+  }
+  
+ 
+  h1{
+      text-align: center;
+  }
+  html {
+    overflow-x: hidden;
+  }
+  
+  

@@ -1,0 +1,103 @@
+
+
+h1 {
+    font-size: larger;
+}
+button.btn.btn-info.btn-lg {
+    background-color: darkgoldenrod;
+    width: 100px;
+}
+html{
+    background-color: antiquewhite;
+}
+
+th {
+    font-weight: bold;
+    text-align: -internal-center;
+}
+table,th,td {
+    border: 1px solid black;
+}
+table.one {
+    border-collapse: collapse;
+    width: 80%;
+    border: 1px solid black;
+}
+table.two {
+    border-collapse: collapse;
+    width: 100%;
+    border: 1px solid black;
+}
+table.three {
+    border-collapse: collapse;
+    width: 100%;
+    border: 1px solid black;
+}
+table.four {
+    border-collapse: collapse;
+    width: 100%;
+    border: 1px solid black;
+}
+table.five {
+    border-collapse: collapse;
+    width: 100%;
+    border: 1px solid black;
+}
+table.six {
+    border-collapse: collapse;
+    width: 100%;
+    border: 1px solid black;
+}
+table.seven {
+    border-collapse: collapse;
+    width: 100%;
+    border: 1px solid black;
+}
+table.eight{
+    border-collapse: collapse;
+    width: 100%;
+    border: 1px solid black;
+}
+table.nine{
+    border-collapse: collapse;
+    width: 100%;
+    border: 1px solid black;
+}
+table.a1{
+    border-collapse: collapse;
+    width: 100%;
+    border: 1px solid black;
+}
+table.a2{
+    border-collapse: collapse;
+    width: 100%;
+    border: 1px solid black;
+}
+table.a3{
+    border-collapse: collapse;
+    width: 100%;
+    border: 1px solid black;
+}
+table.a4{
+    border-collapse: collapse;
+    width: 100%;
+    border: 1px solid black;
+}
+table.a5{
+    border-collapse: collapse;
+    width: 100%;
+    border: 1px solid black;
+}
+table.a6{
+    border-collapse: collapse;
+    width: 100%;
+    border: 1px solid black;
+}
+table.a7{
+    border-collapse: collapse;
+    width: 100%;
+    border: 1px solid black;
+}
+p{
+    width: 10%;
+}

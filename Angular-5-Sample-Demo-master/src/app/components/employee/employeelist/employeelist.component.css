@@ -1,0 +1,75 @@
+table, td, th {  
+    border: 1px solid black;
+  
+  }
+  body {
+       background: azure;
+  }
+  
+  table {
+    border-collapse: collapse;
+    width: 100%;
+  }
+  button.btn.btn-info.btn-lg {
+    background-color: darkgoldenrod;
+    width: 100px;
+}
+  
+  th, td {
+    padding: 20px;
+  }
+  th {
+      color:chocolate;
+  }
+  button.btn.btn-square.btn-success {
+      background-color: greenyellow;
+      size: a5;
+      height: 35px;
+  }
+  button.btn.btn-square.btn-danger {
+      background-color: lightcoral;
+      size: a5;
+      height: 35px;
+  }
+  button.btn.btn-primary.btn-sm {
+      background-color: aquamarine;
+      size: a5;
+      height: 35px;
+      font-size: 12px;
+  }
+  button.btn.btn-primary {
+      background-color: deepskyblue;
+      size: a5;
+      height: 35px;
+  }
+  button.btn.btn-danger {
+      background-color: burlywood;
+      size: a5;
+      height: 35px;
+  }
+  button.btn.btn-secondary {
+         background-color: aqua;
+      size: a5;
+      height: 35px;
+  }
+  button.btn.btn-square.btn-warning {
+      background-color: lightcoral;
+      size: a5;
+      height: 30px;
+  }
+  html {
+      background-color:gainsboro;;
+  }
+  center {
+      color: darkviolet;
+      font-style: italic;
+  }
+  h2{
+      text-align: center;
+  }
+  th{
+      font-size:20px;
+  }
+  td{
+      font-size:15px;
+  }

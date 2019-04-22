@@ -1,0 +1,62 @@
+table, td, th {  
+    border: 3px solid darkkhaki;
+}
+
+  
+  th, td {
+    padding: 15px;
+  }
+  th {
+      color:chocolate;
+  }
+  b {
+      color: darkblue;
+  }
+ 
+  body {
+      background-color: lightgoldenrodyellow;
+  }
+  h1{
+      text-align: center;
+  }
+  h2{
+      text-align: left;
+      color:dodgerblue;
+      }
+      button.btn.btn-danger {
+        background-color: burlywood;
+        size: a5;
+        height: 35px;
+    }
+    button.btn.btn-square.btn-primary {
+        background-color: blueviolet;
+        width: 100px;
+        height: 50px;
+    }
+    button.btn.btn-secondary {
+           background-color: aqua;
+        size: a5;
+        height: 35px;
+        float:right;
+        width: 200px;
+        height:50px;
+
+    }
+    button.btn.btn-success {
+        background-color: deeppink;
+        width: 80px;
+        height: 50px;
+    }
+    
+    button.btn.btn-square.btn-warning {
+        background-color: lightgray;
+        size: a5;
+        height: 50px;
+    width: 200px;
+        float: left;
+    }
+    table.one{
+        float:center;
+        width:100%;
+    }
+    

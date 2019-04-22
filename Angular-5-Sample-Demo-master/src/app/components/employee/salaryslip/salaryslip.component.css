@@ -1,0 +1,34 @@
+h1{
+    text-align: center;
+}
+h2{
+    text-align:center;
+}
+h3{
+    text-align: center;
+}
+table.one {
+    border: 3px solid black;
+    border-collapse: collapse;
+    float: left;
+    width: 45%;
+}
+  table.two {
+ 
+    border: 3px solid black;
+    border-collapse: collapse;
+    float: right;
+    width: 45%;
+  }
+  th, td {
+    padding: 15px;
+    text-align: left;
+  }
+  table.three{
+    border: 3px solid black;
+    border-collapse: collapse;
+    float: right;
+  }
+  h5{
+    text-align: center;
+  }

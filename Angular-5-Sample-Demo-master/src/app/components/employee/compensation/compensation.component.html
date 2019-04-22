@@ -1,0 +1,43 @@
+<html>
+  <head>
+    <title>COMPENSATION MANAGEMENT</title>
+  </head>
+  <body>
+    <h1><b>COMPENSATION</b></h1>
+    <button  routerLink="/hrpage"  class="btn btn-secondary" href="">
+			
+      <span class="glyphicon glyphicon-plus"></span> BACK
+</button>
+
+
+    <button  routerLink="/addcompensation" (click)="addcompensation(d)" class="btn btn-info btn-lg" href="">
+			
+      <span class="glyphicon glyphicon-plus"></span> ADD COMPENSATION
+</button><br><br><br><br>
+<table>
+  <tr>
+    <th>USERNAME</th>
+    <th>EMPID</th>
+    <th>SAL-RANG</th>
+  <th>ANNUL-IN</th>
+  <th>TAX</th>
+  <th>LOANS</th>
+  <th>PRE-ANNUL</th>
+  <th>INS</th>
+    </tr>
+    <tr *ngFor="let d of data" [attr.userid]="d.userid">
+      <td>{{d.username}}</td>
+      <td>{{d.empid}}</td>
+      <td>{{d.sal-rang}}</td>
+      <td>{{d.annul-in}}</td>
+      <td>{{d.tax}}</td>
+      <td>{{d.loans}}</td>
+      <td>{{d.pre-annul}}</td>
+      <td>{{d.ins}}</td>
+    </tr>
+    
+    
+    </table>
+    
+  </body>
+</html>

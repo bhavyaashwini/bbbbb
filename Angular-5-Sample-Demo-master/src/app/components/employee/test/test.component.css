@@ -1,0 +1,10 @@
+table{
+    border: 3px solid black;
+    border-collapse: collapse;
+    float: left;
+  }
+  button.btn.btn-defalut {
+    background-color: darkgoldenrod;
+    width: 100px;
+}
+  

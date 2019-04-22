@@ -1,0 +1,71 @@
+<html>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+<h1>HUMAN RESOURCES</h1>
+<br>
+<div class="navbar">
+ 
+	<div class="dropdown">
+	  <button class="dropbtn">EMPLOYEE DETAILS
+		<i class="fa fa-caret-down"></i>
+	  </button>
+	  <div class="dropdown-content">
+		<a class="nav-link" [routerLink]="['employeelist']"  (click)="employeelist()" href="#">Employee List</a>
+		<a class="nav-link" [routerLink]="['onboarding']"  (click)="onboarding()" href="#">On Boarding page</a>
+	   </div>
+	</div> 
+	
+	<div class="dropdown">
+	  <button class="dropbtn">FEATURES
+		<i class="fa fa-caret-down"></i> 
+	  </button>
+	  <div class="dropdown-content">
+		<a class="nav-link" [routerLink]="['hr']"  (click)="hr()" href="#">HR Information Database</a>
+		<a  class="nav-link" [routerLink]="['payroll']"  (click)="payroll()" href="#">Payroll Systems</a>
+			<a class="nav-link" [routerLink]="['employee']"  (click)="employee()" href="#">Employee Self-Service</a>
+		  <a class="nav-link" [routerLink]="['benefits']"  (click)="benefits()"href="#">Benefits Administration</a>
+			<a class="nav-link" [routerLink]="['Recruiting']"  (click)="Recruiting()" href="#">Recruiting and Onboarding Options</a>
+			<a class="nav-link" [routerLink]="['performance']"  (click)="performance()" href="#">Performance Reviews</a> 
+		</div>
+	</div> 
+	<div class="dropdown">
+	  <button class="dropbtn">RECURIEMENT 
+		<i class="fa fa-caret-down"></i>
+	  </button>
+	  <div class="dropdown-content">
+		<a class="nav-link" [routerLink]="['compensation']"  (click)="compensation()" href="#">Compensation Management</a>
+
+		  <a class="nav-link" [routerLink]="['training']"  (click)="training()" href="#">Training and Development</a>
+	   </div>
+	</div> 
+	<div class="dropdown">
+	  <button class="dropbtn">HIRING
+		<i class="fa fa-caret-down"></i>
+	  </button>
+	  <div class="dropdown-content">
+		<a  class="nav-link" [routerLink]="['definingthejob']"  (click)="definingthejob()" href="#">Defining The Jobs</a>
+	
+		 <a class="nav-link" [routerLink]="['candidate']"  (click)="candidate()" href="#">Interviewing Effiectively</a>
+	 </div>
+	</div> 
+	<div class="dropdown">
+	  <button class="dropbtn">POLICIES
+		<i class="fa fa-caret-down"></i>
+	  </button>
+	  <div class="dropdown-content">
+		<a  [routerLink]="['policylist']"  (click)="policylist()" href="#">Policy List</a>
+	 </div>
+	</div> 
+	  </div><br><br>
+	  <div >
+		<img src="assets/1.jpg" class="logo" alt="" width="400" height="400">
+		<img src="assets/3.png" class="logo" alt="" width="400" height="400">
+		<img src="assets/2.jpg" class="logo" alt="" width="400" height="400">
+	</div>
+	<div >
+		<img src="assets/4.jpeg" class="logo" alt="" width="400" height="400">
+		<img src="assets/5.jpeg" class="logo" alt="" width="400" height="400">
+		<img src="assets/6.jpg" class="logo" alt="" width="400" height="400">
+	</div><br><br>
+	
+	</html>

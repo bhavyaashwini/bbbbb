@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+    <button  routerLink="/hrpage"  class="btn btn-square btn-primary" href="">
+			
+      <span class="glyphicon glyphicon-plus"></span> BACK
+</button>
+
+<head>
+<title>JOB Analysis</title>
+</head>
+<h1><b>JOB ANALYSIS</b></h1>
+<h2>JOB DESCRIPTION</h2>
+<button  routerLink="/addjobdescription" type="button" class="btn btn-secondary">Add job description </button><br><br>
+<br>
+<table >
+
+  <tr>
+      <th>EMP NAME</th>
+      <th>EMP ID</th>
+      <th>JOB TITLE</th>
+      <th>WORKING HOURS</th>
+      <th>DUTIES AND RESPONSIBILITES</th>
+      <th>WORKING CONDITIONS</th>
+      <th>ACTIONS</th>
+   </tr>
+   <tr *ngFor="let d of data1" [attr.userid]="d.userid">
+     <td>{{d.empname}}</td>
+     <td>{{d.empid}}</td>
+     <td>{{d.jobtitle}}</td>
+     <td>{{d.workinghours}}</td>
+     <td>{{d.duties}}</td>
+     <td>{{d.workingconditions}}</td>
+     <td><button type="button"   (click)="delete(d)"  class="btn btn-danger">Delete</button></td>
+      
+   </tr>
+   <tr>
+    <td>Ashwini</td>
+    <td>002</td>
+    <td>Administrative</td>
+    <td>9</td>
+    <td>It includes making travels and meeting arrangements</td>
+    <td>To view all the details</td>
+    <td><button type="button" class="btn btn-danger">Delete</button></td>
+  </tr>
+  <tr>
+    <td>Sathish</td>
+    <td>003</td>
+    <td>Corporate</td>
+    <td>8</td>
+    <td>Ethical principles and conduct such as honesty,integrity,and respect</td>
+    <td>Usually work long hours, including evenings and weekends</td>
+    <td><button type="button" class="btn btn-danger">Delete</button></td>
+  </tr>
+  </table><br><br>
+  
+  <h2><b>JOB SPECIFICATION:</b></h2><br>
+<button routerLink="/addjobspecification" type="button" class="btn btn-square btn-warning">Add job specification</button><br>
+  <br><br>
+   <table class="one" >
+	<tr>
+    <th>Emp ID</th>
+    <th>Emp Name</th>
+		<th>Qualification</th>
+		<th>Qualites</th>
+		<th>Experience</th>
+		<th>Training</th>
+    <th>Interpersonal skills</th>
+    <th>Action</th>
+  </tr>
+		<tr>
+    <td>001</td>
+    <td>Achu</td>
+		<td>MCA</td>
+		<td>JAVA</td>
+		<td>3</td>
+    <td>6 month</td>
+    <td>Active Listening,Team work, Motivation</td>
+    <td><button type="button" class="btn btn-success"> Delete</button></td>
+    </tr>
+    <tr>
+      <td>002</td>
+      <td>Preethi</td>
+      <td>BE CS</td>
+      <td>ANGULAR</td>
+      <td>3</td>
+      <td>7 month</td>
+      <td>Active Listening,Team work, Motivation</td>
+      <td><button type="button" class="btn btn-success"> Delete</button></td>
+      </tr>
+      <tr>
+        <td>003</td>
+        <td>Latha</td>
+        <td>BE EEE</td>
+        <td>C#</td>
+        <td>5</td>
+        <td>5 month</td>
+        <td>Active Listening,Team work, Motivation</td>
+        <td><button type="button" class="btn btn-success"> Delete</button></td>
+        </tr>
+    </table>
+
+</html>

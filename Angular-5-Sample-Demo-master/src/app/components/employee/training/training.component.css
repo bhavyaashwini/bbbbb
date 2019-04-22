@@ -1,0 +1,60 @@
+table, td, th {  
+    border: 3px solid black;
+    text-align: left;
+  }
+  body {
+   background-color: darkgrey;
+  }
+  
+  table {
+    border-collapse: collapse;
+    width: 100%;
+    border:2px;
+  }
+  button.btn.btn-square.btn-warning {
+    background-color: blueviolet;
+        width: 100px;
+        height: 50px;
+  }
+  
+  th, td {
+    padding: 15px;
+  }
+  th {
+      color:chocolate;
+      text-align:center;
+  }
+  td{
+  text-align:center;
+  }
+  
+  
+  button.btn.btn-info.btn-lg {
+      width: max-content;
+      height: inherit;
+      background-color:lightseagreen;
+      float: right;
+      height: 50px;
+      width: 150px;
+  }
+  center {
+      font-style: oblique;
+      color: darkslategray;
+  }
+  * {
+    box-sizing: border-box;
+  }
+  
+ 
+  h1{
+      text-align: center;
+  }
+  html {
+    overflow-x: hidden;
+   
+}
+body[_ngcontent-c1] {
+  background: pink;
+}
+  
+  

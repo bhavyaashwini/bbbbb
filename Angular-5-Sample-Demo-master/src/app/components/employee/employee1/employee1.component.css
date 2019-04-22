@@ -1,0 +1,34 @@
+table, td, th {  
+    border: 1px solid;
+    text-align: left;
+  }
+  html {
+      background-color: floralwhite;
+  }
+  table.one {
+      float:left;
+      width:49%;
+  }
+  
+  table.two   {
+      
+      float:right;
+      width:49%;
+  }
+  
+  th {
+      color: indianred;
+      text-align:center;
+  }
+  b {
+      color: darkgreen;
+  }
+  h1 {
+      text-align: center;
+      background-color: lightpink;
+  }
+  button.btn.btn-info.btn-lg {
+    background-color: deeppink;
+    width: 100px;
+}
+  
